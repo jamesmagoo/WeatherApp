@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css"/>
+
     <title>WeatherJS</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto text-center bg-primary mt-3 p-5 mb-5 rounded">
-                <h1 id="w-location">Location Goes Here</h1>
-                <h3 class="text-light" id="w-desc"> Description Goes Here</h3>
-                <h3 id="w-string">Lovely weather ...</h3>
-                <img id="w-icon">
+                <h1 id="w-location"></h1>
+                <h3 class="text-light" id="w-desc"></h3>
                 <ul id="w-details" class="list-group mt-3">
-                    <li class="list-group-item" id="w-humidity">Humidity</li>
+                    <li class="list-group-item" id="w-humidity"></li>
                     <li class="list-group-item" id="w-temp">Temp</li>
-                    <li class="list-group-item" id="w-humidity">Windspeed</li>
-                    <li class="list-group-item" id="w-humidity">Another Thing</li>
+                    <li class="list-group-item" id="w-wind">Windspeed</li>
+                    <li class="list-group-item" id="w-feels-like">Feels LIke</li>
                 </ul>
                 <hr>
                 <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#locModal">Change Location</button>
@@ -41,10 +40,6 @@
                       <label for="city">City</label>
                       <input type="text" id="w-city" class="form-control">
                   </div>
-                  <div class="form-group">
-                      <label for="city">State</label>
-                      <input type="text" id="w-city" class="form-control">
-                  </div>
               </form>
             </div>
             <div class="modal-footer">
@@ -58,5 +53,9 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+<script src="weather.js"></script>
+<script src="storage.js"></script>
+<script src="ui.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
